@@ -102,5 +102,10 @@ function seven(){
   console.log(rev_num);
   /////
 }
+function eight(){
+  console.log("8. The user enters 2 numbers. Find out if these two numbers have the same digits. For example, for a pair of 123 and 3456789, the answer would be 'YES', and for a pair of 500 and 99, 'NO'.");
+
+
+}
 
 seven();
