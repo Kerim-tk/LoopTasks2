@@ -104,8 +104,38 @@ function seven(){
 }
 function eight(){
   console.log("8. The user enters 2 numbers. Find out if these two numbers have the same digits. For example, for a pair of 123 and 3456789, the answer would be 'YES', and for a pair of 500 and 99, 'NO'.");
+  let a = +prompt("Enter A");
+  let b = +prompt("Enter B");
 
+  let c = b;
+  while(a != 0)
+  {
+      let temp = a % 10;
+
+      while(b != 0)
+      {
+          if (b % 10 == temp)
+          {
+              console.log("YES");
+              a = 0;
+              break;
+          }
+          else
+          {
+              b /= 10;
+          }
+      }
+
+      if(b == 0)
+      {
+          console.log("NO");
+          break;
+      }
+
+      a /= 10;
+      b = c;
+  }
 
 }
 
-seven();
+eight();
